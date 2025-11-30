@@ -33,7 +33,7 @@ body {
     width: 100vw;               
     height: 100vh;              
     background-image: linear-gradient(rgba(1, 53, 62, 1) 0%, rgba(0, 0, 0, 0) 30%),
-                    url('img/7c942405473330c3702552f961fb3ab1a5d9ca82.jpg');
+                    url('../img/7c942405473330c3702552f961fb3ab1a5d9ca82.jpg');
     background-size: cover;      
     background-position: center; 
     background-repeat: no-repeat;
