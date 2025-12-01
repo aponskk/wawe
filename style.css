@@ -32,8 +32,7 @@ body {
 .header {
     width: 100vw;               
     height: 100vh;              
-    background-image: linear-gradient(rgba(1, 53, 62, 1) 0%, rgba(0, 0, 0, 0) 30%),
-                    url('img/7c942405473330c3702552f961fb3ab1a5d9ca82.jpg');
+    background-image: url('img/7c942405473330c3702552f961fb3ab1a5d9ca82.jpg');
     background-size: cover;      
     background-position: center; 
     background-repeat: no-repeat;
@@ -56,7 +55,7 @@ body {
     justify-content: center;
     text-align: center;
     gap: 50px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px 40px;
     z-index: 10;
@@ -65,10 +64,66 @@ body {
     left: 0;
     right: 0;
     width: 100%;
+    background-image: linear-gradient(rgba(1, 53, 62, 1) 0%, rgba(0, 0, 0, 0) 100%)
 }
 
 .nav-list li:hover:not(.active){
     text-decoration: underline;
     text-decoration-color: rgba(0, 178, 160, 1); 
     text-decoration-thickness: 2px; 
+}
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+#about-us {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+#about-us h1 {
+    color: rgba(1, 53, 62, 1);
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: clamp(32px, 3vw, 48px);
+    margin-bottom: 10%;
+}
+
+#about-us .h1{
+    display: flex;
+    justify-content: center;
+}
+
+.green {
+    color: rgba(0, 178, 160, 1);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: clamp(64px, 5vw, 72px);
+    margin-top: 3%;
+}
+
+.text-block {
+    display: flex;
+    gap: 50px;
+    min-height: 450px;          
+}
+
+.text-block1,
+.text-block2 {
+    flex: 1;                     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 50px;                  
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 2.5vw, 16px); 
+}
+
+.text-block p {
+    margin: 0;                   
+    line-height: 1.6;           
 }
